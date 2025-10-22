@@ -1,0 +1,105 @@
+/* ===================================== */
+/* ESTILOS ESPECÍFICOS DA TELA DE LOGIN */
+/* (Depende das variáveis e resets definidos em base.css) */
+/* ===================================== */
+
+/* Centraliza o conteúdo (Login) na tela */
+body {
+    /* Sobrescreve o estilo base.css do body para centralizar a tela de login */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    background-color: var(--fundo-branco);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    /* Usando variável do base.css */
+    border-top: 5px solid var(--ciano-vibrante); 
+}
+
+.logo-text {
+    font-size: 2.2em;
+    font-weight: 700;
+    text-align: center;
+    /* Usando variável do base.css */
+    color: var(--azul-profundo);
+    margin-bottom: 5px;
+}
+
+h2 {
+    /* Sobrescreve o estilo base.css para o contexto do Login */
+    font-weight: 400; 
+    text-align: center;
+    margin-bottom: 30px;
+    /* Usando variável do base.css */
+    border-bottom: 2px solid rgba(0, 206, 255, 0.2); 
+    padding-bottom: 10px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 700;
+    color: var(--texto-preto);
+    font-size: 0.9em;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+    /* Usando variável do base.css */
+    border-color: var(--ciano-vibrante); 
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 206, 255, 0.5);
+}
+
+.btn-login {
+    width: 100%;
+    padding: 15px;
+    /* Usando variável do base.css */
+    background-color: var(--ciano-vibrante); 
+    color: white;
+    font-size: 1.1em;
+    font-weight: 700;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.btn-login:hover {
+    /* Usando variável do base.css */
+    background-color: var(--azul-profundo); 
+}
+
+.forgot-password {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    /* Usando variável do base.css */
+    color: var(--azul-profundo); 
+    font-size: 0.9em;
+}
+
+.forgot-password:hover {
+    /* Usando variável do base.css */
+    color: var(--ciano-vibrante); 
+    text-decoration: underline;
+}
