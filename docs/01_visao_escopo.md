@@ -29,19 +29,22 @@ O escopo do Mínimo Produto Viável (MVP) será estritamente limitado ao **Contr
 
 | Funcionalidade | Descrição Detalhada |
 | :--- | :--- |
+| **Sistema de Autenticação** | A autenticação do sistema deve identificar o usuário e dar-lhe as permissões necessárias para desempenhar sua função dentro do sistema (conforme definido nas Personas). |
 | **Cadastro de Produto (Simples)** | Permite cadastrar um **Produto** com Nome, Código de Referência (SKU), Unidade de Medida e Ponto de Reposição (Estoque Mínimo). |
-| **Registro de Entrada** | Permite adicionar **Produtos** ao inventário (compra/recebimento) com indicação de Fornecedor e Data. |
+| **Registro de Entrada** | Permite adicionar **Produtos** ao inventário (compra/recebimento) com indicação de Fornecedor, Data e **Preço Unitário de Compra** (para fins de custo). |
 | **Registro de Saída** | Permite remover **Produtos** do inventário (venda/uso em serviço/descarte) com indicação de Motivo. |
 | **Consulta de Saldo** | Dashboard simples que exibe o saldo atual de cada **Produto**. |
 | **Alerta de Estoque Mínimo** | Sistema que sinaliza automaticamente (na dashboard) quando um **Produto** atinge ou ultrapassa o Ponto de Reposição. |
+| **Relatório de Saída de Produtos por Período** | O sistema é capaz de gerar relatórios periódicos quanto ao consumo/saída dos **Produtos** em estoque. |
+| **Relatório de Custos** | O sistema é capaz de gerar relatório contendo os **custos dos Produtos utilizados** em período pré-definido (baseado no Preço Unitário de Compra registrado). |
+
+---
 
 ## 1.5. Exclusões do Escopo do MVP (O que NÃO está incluído)
 
 Para manter o produto mínimo e viável, as seguintes funcionalidades e componentes **NÃO FARÃO PARTE** desta primeira versão:
-
-1.  **Cálculo de Custo/Preço:** Não haverá controle financeiro, apenas volumétrico.
-2.  **Múltiplos Armazéns/Lojas:** O MVP focará no estoque de um **único local**.
-3.  **Controle de Validade/Lotes:** Não será controlada a data de vencimento dos produtos.
-4.  **Integração com PDV (Ponto de Venda):** As saídas deverão ser registradas manualmente.
-5.  **Relatórios Complexos:** Serão fornecidas apenas consultas básicas de saldo.
-6.  **Sistema de Autenticação Avançado:** A autenticação será básica e simples, focada apenas no acesso ao sistema.
+  
+1.  **Múltiplos Armazéns/Lojas:** O MVP focará no estoque de um **único local**.
+2.  **Controle de Validade/Lotes:** Não será controlada a data de vencimento dos produtos.
+3.  **Integração com PDV (Ponto de Venda):** As saídas deverão ser registradas manualmente.
+4.  **Relatórios de Projeção/Previsão:** Não serão incluídas análises preditivas (ex: Relatório de Giro de Estoque, Sugestão Automática de Compras Futuras).
