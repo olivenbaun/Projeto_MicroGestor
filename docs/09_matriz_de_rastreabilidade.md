@@ -31,12 +31,16 @@ A Matriz de Rastreabilidade garante que cada Requisito Funcional (RF) do Backlog
 2.  `02_Personas.md`
 3.  `03_Glossario.md`
 
+
 **Fase 2: Especificação**
+
 4.  `04_Requisitos_funcionais.md` (Backlog dos Requisitos Funcionais)
 5.  `05_Requisitos_Nao_Funcionais.md`
 6.  `06_Regras_de_Negocio.md`
 
+
 **Fase 3: Modelagem e Design**
+
 7.  `07_Modelagem_UML.md` (Casos de Uso, Classes, Atividades, Sequência)
 8.  `08_Wireframes.md` (Mockups e Paleta de Cores)
 9.  `09_Matriz_Rastreabilidade.md`
